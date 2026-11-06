@@ -1,0 +1,5 @@
+# Never commit papers (copyright) or BibDesk backups
+*.pdf
+Papers/
+*.bak
+.DS_Store
