@@ -1,6 +1,6 @@
 # bib-file
 
-My master BibTeX database, set up the way the MDO Lab runs `mdolab/bib-file`.
+My master BibTeX database.
 
 | File | What it is |
 |---|---|
@@ -11,17 +11,16 @@ My master BibTeX database, set up the way the MDO Lab runs `mdolab/bib-file`.
 
 ## Rules (MDO Lab conventions)
 1. **Cite keys:** first author's last name + year + lowercase letter: `Liem2017a`, `Gorodetsky2025a`.
-2. **If the paper is already in [mdolab.bib](https://github.com/mdolab/bib-file), copy that entry verbatim**, key included.
-3. Otherwise **build the entry by hand to match the house style.** Don't trust BibTeX downloaded from the web.
-4. `doi` only, **never `url`**.
-5. Separate authors with **`and`**, never commas.
-6. **Spell out months in full** (`November`).
-7. **Don't brace whole titles.** Do protect acronyms and proper names: `{GPU}`, `{H}all`, `{RANS}`.
-8. Add `keywords` (your tags).
-9. Anything uncertain gets a `TODO-…` keyword so it's easy to find and fix.
+2. **build the entry by hand to match the house style.** Don't trust BibTeX downloaded from the web.
+3. `doi` only, **never `url`**.
+4. Separate authors with **`and`**, never commas.
+5. **Spell out months in full** (`November`).
+6. **Don't brace whole titles.** Do protect acronyms and proper names: `{GPU}`, `{H}all`, `{RANS}`.
+7. Add `keywords` (your tags).
+8. Anything uncertain gets a `TODO-…` keyword so it's easy to find and fix.
 
 ## Using it in a paper
-**Local LaTeX (default, the way Martins does it):**
+**Local LaTeX (default:**
 1. In the paper folder, run `lnsbib` once. It creates `powers-link.bib`, a symlink to this file.
 2. In the document: `\bibliography{powers-link}`.
 3. Keep `powers-link.bib` in the paper's `.gitignore`.
